@@ -1,0 +1,110 @@
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+@import 'partials/layout'; // responsive grid and media queries
+
+// color palette - these colors will be the color swatches of the Colors section
+@import 'partials/colors';
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3; // red
+
+/* -------------------------------- 
+
+xPurpose/Theme
+
+-------------------------------- */
+@import 'partials/purpose';
+
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+
+@import 'partials/background';
+
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+
+@import 'partials/patterns';
+
+/* -------------------------------- 
+
+xBranding 
+
+-------------------------------- */
+
+@import 'partials/branding';
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+@import 'partials/navigation';
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+
+@import 'partials/pagetitle';
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+
+@import 'partials/typography';
+
+/* -------------------------------- 
+
+xButtons 
+
+-------------------------------- */
+
+@import 'partials/buttons';
+
+/* -------------------------------- 
+
+xIcons 
+
+-------------------------------- */
+
+@import 'partials/icons';
+
+/* -------------------------------- 
+
+xForm 
+
+-------------------------------- */
+
+@import 'partials/forms';
+
+/* -------------------------------- 
+
+xWireframe
+
+-------------------------------- */
+
+@import 'partials/wireframe';
+
+/* -------------------------------- 
+
+xHtml Elements
+
+-------------------------------- */
+
+@import 'partials/htmlelements';
+
+
+@import 'partials/basic-style';

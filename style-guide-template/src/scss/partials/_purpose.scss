@@ -1,0 +1,19 @@
+.cd-purpose .cd-box::before {
+  content: "The purpose of our site is to apply advanced CSS methods that we ahve learned to our own Zen Garden design.";
+}
+
+#purpose {
+
+  .cd-box {
+    background-color: $color-6;
+    border-color: $color-1;
+  }
+
+  h2 {
+    color: $color-1;
+  }
+
+  p {
+    display: none;
+  }
+}

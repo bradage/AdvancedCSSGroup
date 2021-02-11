@@ -1,0 +1,17 @@
+$color-1: #363537;
+$color-2: #0CCE6B;
+$color-3: #DCED31;
+$color-4: #EF2D56;
+$color-5: #ED7D3A;
+$color-6: #ffffff;
+
+#colors {
+  .cd-box {
+    background-color: $color-6;
+    border-color: $color-1;
+  }
+
+  h2 {
+    color: $color-1;
+  }
+}
