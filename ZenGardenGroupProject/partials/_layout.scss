@@ -5,16 +5,41 @@ $L: 641px;
 
 // media queries
 
-@mixin MQ($canvas) {
-  @if $canvas==S {
-    @media only screen and (min-width: $S) {
-      @content;
+body {
+  width: 100%;
+  display: flexbox;
+
+  @media (min-width: $L) {
+    & {
+      display: grid;
+      max-width: 800px;
     }
   }
+}
 
-  @else if $canvas==L {
-    @media only screen and (min-width: $L) {
-      @content;
+aside.sidebar {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  width: 100%;
+  margin-top: -2.5em;
+  display: block;
+
+  @media (min-width: $L) {
+    & {
+      float: right;
+      position: unset;
+    }
+  }
+}
+
+div .main {
+  padding: 8px 8px;
+  font-size: larger;
+
+  @media (min-width: $L) {
+    & {
+      padding: 5px 5px;
     }
   }
 }
