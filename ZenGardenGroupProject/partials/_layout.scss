@@ -1,5 +1,7 @@
-// breakpoints
 
+@import 'colors';
+
+// breakpoints
 $S: 640px;
 $L: 641px;
 
@@ -33,7 +35,7 @@ aside.sidebar {
   }
 }
 
-div .main {
+div.main {
   padding: 8px 8px;
   font-size: larger;
 
