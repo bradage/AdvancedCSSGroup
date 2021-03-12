@@ -11,8 +11,7 @@
 $primary-font: 'Merriweather',
 serif;
 $secondary-font: 'Open Sans',
-sans-serif, 
-tahoma;
+sans-serif;
 
 /* -------------------------------- 
 
@@ -39,8 +38,77 @@ xPage title
 xTypography 
 
 -------------------------------- */
-
-
+.explanation {
+    h3 {
+      font-family: $primary-font;
+      color: $col-green;
+      text-align: left;
+      margin-left: 0.8em;
+    }
+    p {
+      font-family: $secondary-font;
+      text-align: left;
+      margin-left: 0.8em;
+      color: $col-dark;
+    }
+}
+.participation {
+    h3 {
+      font-family: $primary-font;
+      color: $col-green;
+      text-align: left;
+      margin-left: 0.8em;
+    }
+    p {
+      font-family: $secondary-font;
+      text-align: left;
+      margin-left: 0.8em;
+      color: $col-dark;
+    }
+}
+.benefits {
+    h3 {
+      font-family: $primary-font;
+      color: $col-green;
+      text-align: left;
+      margin-left: 0.8em;
+    }
+    p {
+      font-family: $secondary-font;
+      text-align: left;
+      margin-left: 0.8em;
+      color: $col-dark;
+    }
+}
+.requirements {
+    h3 {
+      font-family: $primary-font;
+      color: $col-green;
+      text-align: left;
+      margin-left: 0.8em;
+    }
+    p {
+      font-family: $secondary-font;
+      text-align: left;
+      margin-left: 0.8em;
+      color: $col-dark;
+    }
+}
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    background-color: $col-green;
+    color: $col-dark;
+    border-radius: 10px;
+    line-height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    a {
+      text-decoration: none;
+    }
+  }
 
 /* -------------------------------- 
 

@@ -1,5 +1,7 @@
-// breakpoints
 
+@import 'colors';
+
+// breakpoints
 $S: 640px;
 $L: 641px;
 
@@ -23,7 +25,7 @@ aside.sidebar {
   top: 25%;
   width: 100%;
   margin-top: -2.5em;
-  display: block;
+  display: none;
 
   @media (min-width: $L) {
     & {
@@ -33,7 +35,7 @@ aside.sidebar {
   }
 }
 
-div .main {
+div.main {
   padding: 8px 8px;
   font-size: larger;
 
