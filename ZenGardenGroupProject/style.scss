@@ -132,5 +132,44 @@ xForm
 
 -------------------------------- */
 
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1,
+h2 {
+    font-family: $primary-font;
+    color: $col-green;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary {
+    font-family: $secondary-font;
+    color: $col-dark;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preamble {
+    h3 {
+        font-family: $primary-font;
+        color: $col-green;
+        text-align: left;
+        margin-left: 0.8em;
+    }
+
+    p {
+        font-family: $secondary-font;
+        font-size: 0.9rem;
+        color: $col-dark;
+        text-align: left;
+        margin-left: 0.8em;
+    }
+}
 
 @import 'partials/basic-style';
