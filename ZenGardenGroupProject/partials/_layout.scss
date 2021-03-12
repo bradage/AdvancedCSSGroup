@@ -1,5 +1,7 @@
-// breakpoints
 
+@import 'colors';
+
+// breakpoints
 $S: 640px;
 $L: 641px;
 
@@ -15,16 +17,6 @@ body {
       max-width: 800px;
     }
   }
-}
-
-/*Nav rules */
-nav {
-  background-color: #FFCE8B;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.5em;
-  font-weight: bold;
 }
 
 .sidebar {
@@ -64,29 +56,6 @@ nav {
   }
 }
 
-// .sidebar {
-//   list-style: none;
-//   padding: 0;
-// }
-
-// .sidebar li:first-child {
-//   display: block;
-// }
-
-// .sidebar li {
-//   display: none;
-// }
-
-// .sidebar a {
-//   display: block;
-//   padding: .75rem;
-//   text-decoration: none;
-// }
-
-// .sidebar a:hover {
-//   background-color: #5D8BA3;
-//   color: #FFCE8B;
-// }
 
 .navactive {
   color: #FFCE8B;
@@ -97,30 +66,7 @@ nav {
   display: block;
 }
 
-// aside.sidebar nav,
-// ul,
-// li,
-// a {
-//   display: block;
-//   color: #051E2B;
-//   text-decoration: none;
-//   // position: fixed;
-//   // right: 0;
-//   // top: 25%;
-//   // width: 100%;
-//   // margin-top: -2.5em;
-//   // display: block;
-
-//   @media (min-width: $L) {
-//     & {
-//       float: right;
-//       position: unset;
-//     }
-//   }
-// }
-
-
-div .main {
+div.main {
   padding: 8px 8px;
   font-size: larger;
 
