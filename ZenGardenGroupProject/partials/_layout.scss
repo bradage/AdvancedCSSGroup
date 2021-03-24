@@ -1,66 +1,19 @@
 // breakpoints
-$S: 640px;
-$L: 641px;
+$S: 767px;
+$L: 768px;
 
 // media queries
 
-body {
-  width: 100%;
-  display: flexbox;
+.page-wrapper {
+  width: 95%;
+  display: flex;
 
   @media (min-width: $L) {
-    & {
-      display: grid;
-      max-width: 800px;
-    }
+    display: grid;
+    grid-template: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto) minmax(200px, auto) / 3fr 1fr;
+    justify-content: center;
+    max-width: 800px;
   }
-}
-
-.sidebar {
-  list-style: none;
-  padding: 0;
-
-  nav,
-  ul,
-  li,
-  a {
-    display: block;
-    color: #051E2B;
-    text-decoration: none;
-    position: fixed;
-    right: 0;
-    top: 25%;
-    width: 100%;
-    margin-top: -2.5em;
-  }
-
-  li:first-child {
-    display: block;
-  }
-
-  li {
-    display: none;
-  }
-
-  a {
-    padding: .75rem;
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: #5D8BA3;
-    color: #FFCE8B;
-  }
-}
-
-
-.navactive {
-  color: #FFCE8B;
-  background-color: #234E66;
-}
-
-.responsive li {
-  display: block;
 }
 
 div.main {
@@ -68,8 +21,42 @@ div.main {
   font-size: larger;
 
   @media (min-width: $L) {
-    & {
-      padding: 5px 5px;
-    }
+    padding: 5px 5px;
+  }
+}
+
+
+.sidebar {
+  display: flex;
+
+  @media (min-width: $L) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+  }
+}
+
+.intro {
+  @media (min-width: $L) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+  }
+}
+
+.main {
+  @media (min-width: $L) {
+    // display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+  }
+}
+
+.main footer {
+  @media (min-width: $L) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+
   }
 }
