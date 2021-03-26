@@ -1,81 +1,75 @@
 .sidebar {
-    list-style: none;
-    padding: 0;
+    h3 {
+        font-family: $nav-header-font;
+        font-size: 1.0rem;
+        background-color: $col-green;
+        margin: 0 0;
+        padding-bottom: 5px;
+    }
 
-    nav,
-    ul,
-    li,
-    a {
+    ul li {
         display: block;
-        color: $col-dark;
-        text-decoration: none;
-        position: fixed;
-        right: 0;
-        top: 25%;
-        width: 100%;
-        margin-top: -2.5em;
+        font-family: $secondary-font;
+        background-color: $col-lime;
     }
 
-    li:first-child {
-        display: block;
-    }
-
-    li {
-        display: none;
-    }
-
-    a {
-        padding: .75rem;
-        text-decoration: none;
-    }
-
-    a:hover {
-        background-color: $col-orange;
-        color: $col-dark;
-    }
-
-    @media (min-width: $L) {
-
-        nav,
-        ul,
-        li,
-        a {
-            position: unset;
-        }
+    ul {
+        padding-left: 10%;
+        margin-top: 0;
     }
 }
 
 .design-selection {
-    position: relative;
-    display: inline-block;
-    background-color: $col-red;
-    color: $col-white;
-    padding: 10px;
-    font-size: 1em;
+    a {
+        font-size: .1rem;
+    }
 
-    [role="navigation"] ul {
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        z-index: 1;
+    a.designer-name {
+        font-family: $nav-designer-font;
+        color: $col-dark;
+        text-decoration: none;
+        font-size: 1.0rem;
+    }
 
-        a {
-            color: $col-dark;
-            padding: 10px 12px;
-            text-decoration: none;
-            display: block
-        }
+    a.design-name {
+        font-family: $secondary-font;
+        color: $col-dark;
+        text-decoration: none;
+        font-size: .95rem;
+        margin-bottom: 3px;
+    }
 
-        a:hover {
-            background-color: $col-orange;
-        }
+    a.design-name::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    a.designer-name:hover {
+        font-size: 1.2rem;
+    }
+
+    a.design-name:hover {
+        font-size: 1.1rem;
     }
 }
 
-.design-selection[role="navigation"]:hover {
-    display: block;
+.design-archives {
+
+    a {
+        text-decoration: none;
+        font-family: $secondary-font;
+        color: $col-dark;
+        font-size: .95rem;
+        margin-bottom: 3px;
+    }
 }
 
-.design-selection:hover {
-    background-color: $col-orange;
+.zen-resources {
+    a {
+        text-decoration: none;
+        font-family: $secondary-font;
+        color: $col-dark;
+        font-size: .95rem;
+        margin-bottom: 3px;
+    }
 }

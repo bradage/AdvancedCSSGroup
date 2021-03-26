@@ -1,0 +1,44 @@
+.preamble {
+    h3 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        font-family: $primary-font;
+        color: $col-green;
+        margin-left: 0.8em;
+        font-family: $primary-font;
+        color: $col-red;
+        text-align: left;
+    }
+
+    p {
+        font-family: $secondary-font;
+        font-size: 0.9rem;
+        color: $col-dark;
+        text-align: left;
+        margin-left: 0.8em;
+    }
+
+    p:nth-child(2) {
+        grid-column-start: 1;
+        grid-row: 2 / 3;
+        font-family: $secondary-font;
+        color: $col-dark;
+        text-align: left;
+    }
+
+    p:nth-child(3) {
+        grid-column-start: 1;
+        grid-row: 3 / 4;
+        font-family: $secondary-font;
+        color: $col-dark;
+        text-align: left;
+    }
+
+    p:last-child {
+        grid-column-start: 1;
+        grid-row: 4 / 5;
+        font-family: $secondary-font;
+        color: $col-dark;
+        text-align: left;
+    }
+}
