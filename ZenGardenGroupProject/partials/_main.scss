@@ -21,6 +21,7 @@ div.main {
     h3 {
         font-family: $primary-font;
         color: $col-red;
+        margin-left: 0.8em;
         text-align: left;
     }
 
@@ -37,11 +38,13 @@ div.main {
         font-family: $primary-font;
         color: $col-red;
         text-align: left;
+        margin-left: 0.8em;
     }
 
     p {
         font-family: $secondary-font;
         text-align: left;
+        margin-left: 0.8em;
         color: $col-dark;
     }
 }
@@ -51,6 +54,7 @@ div.main {
         font-family: $primary-font;
         color: $col-red;
         text-align: left;
+        margin-left: 0.8em;
     }
 
     p {
@@ -64,7 +68,7 @@ div.main {
 .requirements {
     h3 {
         font-family: $primary-font;
-        color: $col-green;
+        color: $col-red;
         text-align: left;
         margin-left: 0.8em;
     }
