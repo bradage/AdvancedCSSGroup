@@ -19,3 +19,10 @@ $col-light-pink: #FBB1BD;
 $col-pink: #F9BEC7;
 $col-baby-pink: #F7CAD0;
 $col-piggy-pink: #FAE0E4;
+$col-linen: #f9fbf2;
+
+//Set background color for whole page
+
+html {
+    background-color: $col-linen;
+}

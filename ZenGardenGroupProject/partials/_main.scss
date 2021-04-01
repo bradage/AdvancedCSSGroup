@@ -1,78 +1,9 @@
 .main {
-    @media (min-width: $L) {
-        body {
-            max-width: 800px;
-            margin: 0 auto;
-            float: none;
-        }
-    }
-}
-
-div.main {
     padding: 8px 8px;
-    font-size: larger;
+    margin-left: 0.8em;
+    text-align: left;
 
     @media (min-width: $L) {
         padding: 5px 5px;
-    }
-}
-
-.explanation {
-    h3 {
-        font-family: $header-font;
-        color: $col-red-crayola;
-        text-align: left;
-    }
-
-    p {
-        font-family: $secondary-font;
-        text-align: left;
-        margin-left: 0.8em;
-        color: $col-dark;
-    }
-}
-
-.participation {
-    h3 {
-        font-family: $header-font;
-        color: $col-red-crayola;
-        text-align: left;
-    }
-
-    p {
-        font-family: $secondary-font;
-        text-align: left;
-        color: $col-dark;
-    }
-}
-
-.benefits {
-    h3 {
-        font-family: $header-font;
-        color: $col-red-crayola;
-        text-align: left;
-    }
-
-    p {
-        font-family: $secondary-font;
-        text-align: left;
-        margin-left: 0.8em;
-        color: $col-dark;
-    }
-}
-
-.requirements {
-    h3 {
-        font-family: $header-font;
-        color: $col-red-crayola;
-        text-align: left;
-        margin-left: 0.8em;
-    }
-
-    p {
-        font-family: $secondary-font;
-        text-align: left;
-        margin-left: 0.8em;
-        color: $col-dark;
     }
 }
