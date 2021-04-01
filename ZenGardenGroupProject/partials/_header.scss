@@ -27,14 +27,11 @@
 .summary {
     font-family: $secondary-font;
     color: $col-dark;
-    font-size: 0.8rem;
     margin: 0 auto;
     text-align: center;
 
     p {
         grid-column-start: 2;
-        font-family: $secondary-font;
-        color: $col-dark;
         text-align: left;
     }
 }

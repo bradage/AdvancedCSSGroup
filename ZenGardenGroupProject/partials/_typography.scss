@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto+Slab&family=Indie+Flower&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto+Slab&family=Indie+Flower&family=Satisfy&family=Crimson+Pro:wght@400;500&display=swap');
 
 $primary-font: 'Merriweather',
 serif;
 
-$secondary-font: 'Open Sans',
-sans-serif,
-tahoma;
+$secondary-font: 'Crimson Pro',
+serif;
 
 $nav-header-font: 'Roboto Slab',
 'calibri',
@@ -19,3 +18,18 @@ cursive;
 
 $main-header-font: 'Satisfy',
 cursive;
+
+//Set general fonts and sizes
+h3 {
+    font-family: $header-font;
+    color: $col-red-crayola;
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+p {
+    font-family: $secondary-font;
+    color: $col-dark;
+    font-size: 1.25rem;
+    text-align: left;
+}

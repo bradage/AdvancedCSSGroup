@@ -73,6 +73,30 @@ $L: 768px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45px repeat(3, 75px);
+
+    h3 {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    p {
+      margin-left: 0.8em;
+    }
+
+    p:nth-child(2) {
+      grid-column-start: 1;
+      grid-row: 2 / 3;
+    }
+
+    p:nth-child(3) {
+      grid-column-start: 1;
+      grid-row: 3 / 4;
+    }
+
+    p:last-child {
+      grid-column-start: 1;
+      grid-row: 4 / 5;
+    }
   }
 }
 
@@ -154,12 +178,21 @@ $L: 768px;
     text-decoration: none;
   }
 
+  @media (min-width: $L) {
+    display: block;
+  }
+
 }
 
 ///////////////////////////////////
 //Footer
 ///////////////////////////////////
 .main footer {
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
   @media (min-width: $L) {
     grid-row: 5/6;
   }
