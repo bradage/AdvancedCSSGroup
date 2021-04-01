@@ -1,75 +1,112 @@
 .sidebar {
-    h3 {
-        font-family: $nav-header-font;
-        font-size: 1.0rem;
-        background-color: $col-green;
-        margin: 0 0;
-        padding-bottom: 5px;
-    }
+    @media (min-width: $L) {
+        h3 {
+            font-family: $nav-header-font;
+            font-size: 1.0rem;
+            background-color: $col-green;
+            margin: 0 0;
+            padding-bottom: 5px;
+        }
 
-    ul li {
-        display: block;
-        font-family: $secondary-font;
-        background-color: $col-lime;
-    }
+        ul li {
+            display: block;
+            font-family: $secondary-font;
+            background-color: $col-lime;
+        }
 
-    ul {
-        padding-left: 10%;
-        margin-top: 0;
+        ul {
+            padding-left: 10%;
+            margin-top: 0;
+        }
     }
 }
 
 .design-selection {
-    a {
-        font-size: .1rem;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
-    a.designer-name {
-        font-family: $nav-designer-font;
-        color: $col-dark;
+    li:hover ul {
+        display: block;
+    }
+
+    li {
+        display: inline;
+        float: left;
+        position: relative;
+    }
+
+    a {
         text-decoration: none;
-        font-size: 1.0rem;
+        padding: 8px 0px;
+        float: left;
+        text-align: left;
+
     }
 
     a.design-name {
         font-family: $secondary-font;
         color: $col-dark;
-        text-decoration: none;
-        font-size: .95rem;
-        margin-bottom: 3px;
     }
 
-    a.design-name::after {
-        content: "\A";
-        white-space: pre;
+    a.designer-name {
+        font-family: $nav-designer-font;
+        color: $col-dark;
     }
 
-    a.designer-name:hover {
-        font-size: 1.2rem;
-    }
+    @media (min-width: $L) {
+        a {
+            font-size: .1rem;
+        }
 
-    a.design-name:hover {
-        font-size: 1.1rem;
+        a.designer-name {
+            text-decoration: none;
+            font-size: 1.0rem;
+        }
+
+        a.design-name {
+            text-decoration: none;
+            font-size: .95rem;
+            margin-bottom: 3px;
+        }
+
+        a.design-name::after {
+            content: "\A";
+            white-space: pre;
+        }
+
+        a.designer-name:hover {
+            font-size: 1.2rem;
+        }
+
+        a.design-name:hover {
+            font-size: 1.1rem;
+        }
     }
 }
 
 .design-archives {
-
-    a {
-        text-decoration: none;
-        font-family: $secondary-font;
-        color: $col-dark;
-        font-size: .95rem;
-        margin-bottom: 3px;
+    @media (min-width: $L) {
+        a {
+            text-decoration: none;
+            font-family: $secondary-font;
+            color: $col-dark;
+            font-size: .95rem;
+            margin-bottom: 3px;
+        }
     }
 }
 
 .zen-resources {
-    a {
-        text-decoration: none;
-        font-family: $secondary-font;
-        color: $col-dark;
-        font-size: .95rem;
-        margin-bottom: 3px;
+    @media (min-width: $L) {
+        a {
+            text-decoration: none;
+            font-family: $secondary-font;
+            color: $col-dark;
+            font-size: .95rem;
+            margin-bottom: 3px;
+        }
     }
 }

@@ -1,12 +1,13 @@
 .preamble {
+    max-width: 85%;
+    margin: 0 auto;
+
     h3 {
         grid-column-start: 1;
         grid-row-start: 1;
-        font-family: $primary-font;
-        color: $col-green;
         margin-left: 0.8em;
-        font-family: $primary-font;
-        color: $col-red;
+        font-family: $header-font;
+        color: $col-red-crayola;
         text-align: left;
     }
 
