@@ -3,20 +3,38 @@ $S: 767px;
 $L: 768px;
 
 // media queries
+//Set background color for whole page
+
+html {
+  @media (min-width: $L) {
+    background-color: $col-linen;
+  }
+}
+
+body {
+
+  background-color: $col-baby-pink;
+
+  @media (min-width: $L) {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+}
+
 
 ///////////////////////////////////
 //Page Wrapper
 ///////////////////////////////////
 .page-wrapper {
-  background-color: $col-baby-pink;
-  max-width: 90%;
   display: grid;
   grid-template: repeat(3, minmax(200px, auto)) / 1fr;
 
   @media (min-width: $L) {
     display: grid;
-    grid-template: minmax(200px, auto) minmax(200px, auto) minmax(200px, auto) minmax(200px, auto) / 3fr 1.5fr;
+    grid-template: minmax(200px, auto) minmax(200px, auto) / 3fr 1.5fr;
     justify-content: center;
+    grid-gap: 1.5rem;
     max-width: 1200px;
     min-width: 900px;
     margin: 0 auto;
@@ -30,6 +48,19 @@ $L: 768px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+
+  header {
+    // display: flex;
+    // flex-direction: column;
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
 
   @media (min-width: $L) {
     grid-column: 1/3;
@@ -72,7 +103,7 @@ $L: 768px;
   @media (min-width: $L) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 45px repeat(3, 75px);
+    grid-template-rows: 45px repeat(3, (75px auto));
 
     h3 {
       grid-column-start: 1;
@@ -114,12 +145,11 @@ $L: 768px;
 
   @media (min-width: $L) {
     display: grid;
-    grid-template: repeat(4, minmax(200px, auto)) / 100%;
+    grid-template: repeat(4, minmax(200px, auto)) 97px / 100%;
     grid-column: 1/2;
     grid-row: 2/3;
     // grid-template-rows: min-content auto auto;
     grid-gap: 1.5rem;
-    text-align: left;
 
   }
 }
@@ -196,4 +226,5 @@ $L: 768px;
   @media (min-width: $L) {
     grid-row: 5/6;
   }
+
 }

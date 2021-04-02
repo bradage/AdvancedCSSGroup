@@ -1,9 +1,12 @@
 .main {
     padding: 8px 8px;
     margin-left: 0.8em;
-    text-align: left;
 
     @media (min-width: $L) {
         padding: 5px 5px;
+
+        h3 {
+            margin: unset;
+        }
     }
 }
