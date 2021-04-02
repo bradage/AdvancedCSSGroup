@@ -12,16 +12,29 @@
         font-family: $main-header-font;
         color: $col-red-crayola;
         font-size: 1.75rem;
-        text-align: right;
-        margin-right: 4rem;
+        text-align: center;
     }
 
     header>h2 {
         font-family: $main-header-font;
         color: $col-red-crayola;
         font-size: 1.75rem;
-        text-align: left;
+        text-align: center;
     }
+
+    @media (min-width: $L) {
+        header>h1 {
+            text-align: right;
+            margin-right: 4rem;
+        }
+
+        header>h2 {
+
+            text-align: left;
+        }
+    }
+
+
 }
 
 .summary {

@@ -11,4 +11,9 @@
     p {
         margin-left: 0.8em;
     }
+
+    @media (min-width: $L) {
+        max-width: 65%;
+
+    }
 }

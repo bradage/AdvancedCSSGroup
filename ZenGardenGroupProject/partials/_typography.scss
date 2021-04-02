@@ -33,3 +33,11 @@ p {
     font-size: 1.25rem;
     text-align: left;
 }
+
+a {
+    color: $col-french-rose;
+}
+
+a:hover {
+    color: $col-india-green;
+}
