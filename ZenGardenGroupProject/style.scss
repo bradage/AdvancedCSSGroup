@@ -1,3 +1,11 @@
+/* -------------------------------- 
+
+xMixins 
+
+-------------------------------- */
+
+@import 'partials/mixins';
+
 // color palette - these colors will be the color swatches of the Colors section
 
 @import 'partials/colors';
@@ -51,10 +59,3 @@ xFooter
 
 -------------------------------- */
 @import 'partials/footer';
-
-
-
-
-
-
-@import 'partials/basic-style';

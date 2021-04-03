@@ -18,7 +18,7 @@ body {
   @media (min-width: $L) {
     max-width: 1200px;
     min-width: 900px;
-    margin: 0 auto;
+    @include centerObj;
   }
 }
 
@@ -28,7 +28,7 @@ body {
 ///////////////////////////////////
 .page-wrapper {
   display: grid;
-  grid-template: repeat(3, minmax(200px, auto)) / 1fr;
+  grid-template: minmax(200px, auto) minmax(45px, auto) minmax(200px, auto) / 1fr;
 
   @media (min-width: $L) {
     display: grid;
@@ -37,9 +37,10 @@ body {
     grid-gap: 1.5rem;
     max-width: 1200px;
     min-width: 900px;
-    margin: 0 auto;
+    @include centerObj;
   }
 }
+
 
 ///////////////////////////////////
 //Intro
@@ -95,6 +96,7 @@ body {
   }
 }
 
+
 ///////////////////////////////////
 //Preamble
 ///////////////////////////////////
@@ -132,8 +134,6 @@ body {
 }
 
 
-
-
 ///////////////////////////////////
 //Main
 ///////////////////////////////////
@@ -154,12 +154,14 @@ body {
   }
 }
 
+
 ///////////////////////////////////
 //Explanation
 ///////////////////////////////////
 .explanation {
   grid-row: 1/2;
 }
+
 
 ///////////////////////////////////
 //Participation
@@ -168,6 +170,7 @@ body {
   grid-row: 2/3;
 }
 
+
 ///////////////////////////////////
 //Benefits
 ///////////////////////////////////
@@ -175,12 +178,14 @@ body {
   grid-row: 3/4;
 }
 
+
 ///////////////////////////////////
 //Requirements
 ///////////////////////////////////
 .requirements {
   grid-row: 4/5;
 }
+
 
 ///////////////////////////////////
 //Sidebar
@@ -192,7 +197,7 @@ body {
   @media (min-width: $L) {
     display: block;
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 2/3;
     margin-left: 10%;
   }
 }
@@ -213,6 +218,7 @@ body {
   }
 
 }
+
 
 ///////////////////////////////////
 //Footer
