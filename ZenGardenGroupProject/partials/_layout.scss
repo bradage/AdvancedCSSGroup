@@ -28,7 +28,7 @@ body {
 ///////////////////////////////////
 .page-wrapper {
   display: grid;
-  grid-template: repeat(3, minmax(200px, auto)) / 1fr;
+  grid-template: minmax(200px, auto) minmax(45px, auto) minmax(200px, auto) / 1fr;
 
   @media (min-width: $L) {
     display: grid;
@@ -192,7 +192,7 @@ body {
   @media (min-width: $L) {
     display: block;
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 2/3;
     margin-left: 10%;
   }
 }
