@@ -6,16 +6,6 @@
         background-size: cover;
         border-radius: 0% 0% 70% 70%;
         background-position-y: 35%;
-    }
-
-    header>h1 {
-        font-family: $main-header-font;
-        color: $col-red-crayola;
-        font-size: 1.75rem;
-        text-align: center;
-    }
-
-    header>h2 {
         font-family: $main-header-font;
         color: $col-red-crayola;
         font-size: 1.75rem;
@@ -40,7 +30,7 @@
 .summary {
     font-family: $secondary-font;
     color: $col-dark;
-    margin: 0 auto;
+    @include centerObj;
     text-align: center;
 
     p {

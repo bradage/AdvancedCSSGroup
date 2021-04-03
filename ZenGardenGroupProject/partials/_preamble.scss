@@ -1,6 +1,6 @@
 .preamble {
     max-width: 85%;
-    margin: 0 auto;
+    @include centerObj;
 
     h3 {
         margin-left: 0.8em;
